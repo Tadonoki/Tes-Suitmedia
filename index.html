@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ideas - Suitmedia</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="logo">suitmedia</div>
+        <nav>
+          <ul>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li class="active"><a href="#">Ideas</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="banner">
+      <div class="banner-text">
+        <h1>Ideas</h1>
+        <p>Where all our great things begin</p>
+      </div>
+    </section>
+    <section class="content">
+      <div class="controls">
+        <span>Showing 1 - 10 of 100</span>
+        <div>
+          <label for="perPage">Show per page:</label>
+          <select id="perPage" onchange="fetchData()">
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+          </select>
+        </div>
+        <div>
+          <label for="sort">Sort by:</label>
+          <select id="sort" onchange="fetchData()">
+            <option value="-published_at">Newest</option>
+            <option value="published_at">Oldest</option>
+          </select>
+        </div>
+      </div>
+      <div class="posts" id="posts">
+        <div class="post">
+          <img src="foto/fotopost/3788809.jpg" alt="Post Image" />
+          <h4>Kenali Tingkatan Influencers berdasarkan Jumlah Followers</h4>
+          <p>5 September 2022</p>
+        </div>
+        <div class="post">
+          <img src="foto/fotopost/3837503.jpg" alt="Post Image" />
+          <h4>
+            Jangan Asal Pilih Influencer, Berikut Cara Menyusun Strategi
+            Influencer
+          </h4>
+          <p>5 September 2022</p>
+        </div>
+        <div class="post">
+          <img src="foto/fotopost/3788809.jpg" alt="Post Image" />
+          <h4>Kenali Tingkatan Influencers berdasarkan Jumlah Followers</h4>
+          <p>5 September 2022</p>
+        </div>
+        <div class="post">
+          <img src="foto/fotopost/3837503.jpg" alt="Post Image" />
+          <h4>
+            Jangan Asal Pilih Influencer, Berikut Cara Menyusun Strategi
+            Influencer
+          </h4>
+          <p>5 September 2022</p>
+        </div>
+        <div class="post">
+          <img src="foto/fotopost/3788809.jpg" alt="Post Image" />
+          <h4>Kenali Tingkatan Influencers berdasarkan Jumlah Followers</h4>
+          <p>5 September 2022</p>
+        </div>
+        <div class="post">
+          <img src="foto/fotopost/3837503.jpg" alt="Post Image" />
+          <h4>
+            Jangan Asal Pilih Influencer, Berikut Cara Menyusun Strategi
+            Influencer
+          </h4>
+          <p>5 September 2022</p>
+        </div>
+        <div class="post">
+          <img src="foto/fotopost/3788809.jpg" alt="Post Image" />
+          <h4>Kenali Tingkatan Influencers berdasarkan Jumlah Followers</h4>
+          <p>5 September 2022</p>
+        </div>
+        <div class="post">
+          <img src="foto/fotopost/3837503.jpg" alt="Post Image" />
+          <h4>
+            Jangan Asal Pilih Influencer, Berikut Cara Menyusun Strategi
+            Influencer
+          </h4>
+          <p>5 September 2022</p>
+        </div>
+      </div>
+      <div class="pagination">
+        <button onclick="prevPage()">Previous</button>
+        <span id="pageNumber">1</span>
+        <button onclick="nextPage()">Next</button>
+      </div>
+    </section>
+  </body>
+</html>
